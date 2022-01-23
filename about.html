@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> ABOUT US </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</head>
+<body>
+  
+    <div class="container">
+        <a target="_blank" href="index.html"><img src="images/Logo.png" class="logo">
+    </a></div>
+    <div class="contain" onclick="myFunction(this)">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <button class="dropdown-btn"><a href="#">Collection &#8595;&#8595;</a>
+            </button>
+            <div class="dropdown-container">
+              <a href="collection.HTML">Shareen </a>
+              <a href="collection.HTML">Nairah </a>
+              <a href="collection.HTML">Khisha</a>
+            </div>
+            <button class="dropdown-btn"><a href="#">Categories &#8595;&#8595;</a>
+            </button>
+            <div class="dropdown-container">
+              <a href="categories.html">Kids</a>
+              <a href="categories.html">Teenagers</a>
+              <a href="categories.html">Adults</a>
+            </div>
+            <a href="contact.html">Contact</a>
+      </div>
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;MENU </span>
+    </div>
+      
+
+    <div style="text-align: center">
+      <center>
+        <h1 class="heading">ABOUT US</h1>
+      </center>
+    </div>
+        <h2 style="color:brown"> WHAT IS KINDERSCARF? </h2>
+        <img src="images/grouphijab.png">
+    <div class="aboutus">
+        <p>Hijab is a hijab worn by certain Muslim women in front of any man outside their immediate family or sometimes by men, which covers the head and chest. For Muslim women who choose to wear the hijab, it allows them to maintain decency, morals, and freedom of choice. They choose to cover because they believe it liberates and allows them to avoid distractions. Therefore, many entrepreneurs have tried to enrich some types of hijab to be styled to hijabis around the world. Our company also does not miss the opportunity to try their luck in this field of fashion.It can support our slogan that women’s best jewelery is her shyness.<br><br>The business is concentrating its operations at Dataran MASMED in UiTM Kedah. Due to the scarves shop location in UiTM Kedah, Dataran MASMED was chosen as the target market. As a result, kinderscarfs shop may easily be provided to university customers via shipping, self-collection or cash on delivery. We reached the decision to run this business because of running a business plan assignment in the subject of ENT300. We were given the opportunity to design a business that has the potential to be run around the UiTM Kedah area. The company includes four women from class KIM1105G, namely:</p>
+         <ol>
+          <li>NUR IZATUL SHAHIRAH BT MOHD FAUZI (2019278996)</li>
+          <li>NUR AZREEN AZLEEN BT HASSIM (2019448648)</li>
+          <li>NORHASANA BT BAHARIN (2019403594)</li>
+          <li>NUR FAKHIRAH BT MASRAN (2019284778)</li>
+          <li>NUR HIDAYATUL NISHA BT HUSSIN (2019299534)</li>
+        </ol>
+    <h3 style="color:brown"> WHY US?</h3>
+    <img src ="images/hijabis.png" alt="Hijabis" class="description">
+    <p class="paragraph">The design of the scarves is made using high quality materials exclusively to meet the needs of users according to the comfort and satisfaction of the user. We import special types of fabrics from abroad to make our products in a class of their own. Our products can be used as souvenirs in an event, or can be used as gifts because of their quality that attracts the attention of consumers. The type of fabric used is very popular with the public and is suitable for use by every woman<br><br>
+      Having a friendly relationship with the customer, this can make the customer feel more comfortable and satisfied to deal with the staff compared to the automatic chat boat system. The company will collect feedback from customers on their level of satisfaction with using our products or the attitude of staff to make improvements or modifications so that customers are satisfied with our products. We also provide loyalty rewards to loyal users who use our products. For example, customers who have purchased 5 of our products will be able to get a free gift or a 20% discount.</p>
+    </div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12923.306624891307!2d100.43752446611919!3d5.707390585244541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304b28adfa3c0e53%3A0x42d4aa973d329bae!2s08100%20Bedong%2C%20Kedah!5e1!3m2!1sen!2smy!4v1642776328660!5m2!1sen!2smy" width="800" height="450" style="border:5px;" allowfullscreen="" loading="lazy"></iframe>
+     <br><br>
+      <h4><strong> We are here!</strong></h4>
+  <br><br>
+<!-- Footer End -->
+      <div class="footer-bottom">
+        <p style="color:rgb(255, 255, 255);">copyright &copy;2022 kinderscarf.</p>
+      </div>
+<!-- Footer End -->
+
+      <script>
+        function myFunction(x) {
+          x.classList.toggle("change");
+        }
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+          }
+          
+          function closeNav() {
+              document.getElementById("mySidenav").style.width = "0";
+          }
+  var dropdown = document.getElementsByClassName("dropdown-btn");
+  var i;
+  
+  for (i = 0; i < dropdown.length; i++) {
+    dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+    dropdownContent.style.display = "none";
+    } else {
+    dropdownContent.style.display = "block";
+    }
+    });
+  }
+        </script>
+</body>
+</html>

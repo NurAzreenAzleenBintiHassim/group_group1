@@ -1,0 +1,233 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+.information{
+    background: url(images/contactbackground.jpg);
+    background-size: cover;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(83, 28, 28);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff6f6;
+    display: block;
+    transition: 0.3s;
+  }
+  .sidenav img{
+      width: 160px;
+      margin-left: 20px;
+      margin-top: 30px;
+      
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+.contact{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-page{
+    margin-left: 200px;
+    width: 100%;
+    max-width: 1000px;
+    padding: 50px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contact-page h1{
+    width: 100%;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    color: rgb(101, 106, 119);
+    font-size: 26px;
+}
+.contact-info, .contact-form{
+    flex: 1;
+}
+.item{
+    margin-bottom: 24px;
+    color: rgb(243, 243, 243);
+    font-size: 17px;
+    
+}
+.icon{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #06090cd2;
+    text-align: center;
+    color: #fff;
+    margin-right: 16px;
+    border-radius: 50%;
+}
+.contact-form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.textb{
+    width: calc(50% - 10px);
+    height: 50px;
+    padding: 12px;
+    background-color: rgba(34, 34, 34, 0.842);
+    border: none;
+    color: #fff;
+    margin-bottom: 20px;
+}
+textarea{
+    width: 50%;
+    min-height: 200px;
+    max-height: 400px;
+    resize: vertical;
+    padding: 12px;
+    background-color: rgba(34, 34, 34, 0.918);
+    border: none;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.btn{
+    width: 120px;
+    height: 40px;
+    background-color: #dbd034;
+    border: none;
+    color: rgb(19, 19, 19);
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 2px solid #dbd834;
+    transition: .3s linear;
+    margin-right: 50%;
+}
+.btn:hover{
+    background-color: transparent;
+    color: #3494db;
+}
+.icon-bar {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+  }
+  
+  .icon-bar a:hover {
+    background-color: #000;
+  }
+  
+  .facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .instagram {
+    background: #dd396a;
+    color: white;
+  }
+  
+  .whatsapp {
+    background: #04af68;
+    color: white;
+  }
+  
+  .email{
+    background: #d12424;
+    color: white;
+  }
+  .footer-content{
+    background: rgb(173, 155, 155);
+    height: auto;
+    font-family: "open sans";
+    padding-top: 40px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+.socials a:hover i{
+    color: rgb(255, 0, 157);
+}
+.footer-bottom{
+    background: rgb(48, 46, 46);
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 10px;
+}

@@ -1,0 +1,195 @@
+/* CSS Document */
+
+*{margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: #ffd1b3;
+}
+
+nav{
+    width: 80%;
+    position: sticky;
+    margin: 20 px auto;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.nav-links ul li a{
+    color: brown;
+    text-decoration: none;
+}
+
+.information{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    transform: translateY(-50%);
+}
+.navbar .logo a{
+    font-size: 27px;
+    margin-right: 200px;
+  }
+.logoimage{
+    width: 100px;
+    position: static;
+    margin-left: 40px;
+  }
+
+#circle{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 150px;
+    left: 100px;
+    border-radius: 50%;
+    background: rgb(233, 192, 154);
+    transform: rotate(0deg);
+    transition: 1s;
+}
+
+.feature img{
+    width: 170px;
+}
+
+.feature{
+    position: absolute;
+}
+
+.one{
+    top: 350px;
+    right: 50px;
+}
+
+.two{
+    top: 150px;
+    left: 350px;
+    transform: rotate(-90deg);
+}
+
+.three{
+    bottom: 410px;
+    left: 50px;
+    transform: rotate(-180deg);
+}
+
+.four{
+    bottom: 150px;
+    right: 350px;
+    transform: rotate(-270deg);
+}
+
+.controls{
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-40%);
+    text-align: center;
+}
+
+.controls h3{
+    margin: 15px 0;
+    color:brown;
+}
+#upBtn{
+    width: 80px;
+    cursor: pointer;
+}
+
+#downBtn{
+    width: 80px;
+    cursor: pointer;
+    transform: rotate(180deg);
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+::selection{
+  background: rgb(0,123,255,0.3);
+}
+.content{
+  max-width: 1250px;
+  margin: auto;
+  padding: 0 30px;
+}
+.navbar{
+  background-color: #af4747f6;  
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+    transition: all 0.3s ease;
+}
+.navbar.sticky{
+  background: rgb(206, 147, 120);
+  padding: 10px 0;
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+}
+.navbar .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .logo a{
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  font-weight: 1000;
+  text-decoration: none;
+  margin-left: 30px;
+}
+.navbar .menu-list{
+  display: inline-flex;
+}
+.menu-list li{
+  list-style: none;
+}
+.menu-list li a{
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 1000;
+  margin-right: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.menu-list li a:hover{
+  color: #ff0077;
+}
+.footer-bottom{
+    background: rgb(206, 147, 120);
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+}
+.hijabgirl{
+    margin-left: 230px;
+    margin-top: 130px;
+}
+
+
+

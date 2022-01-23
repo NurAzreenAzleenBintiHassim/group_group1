@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KinderScarf Offcial</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://kit.fontawesome.com/d417202963.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- Home Page Start -->
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo">
+        <a href="#">Kinder Scarf</a>
+      </div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="collection.HTML">Collection</a></li>
+        <li><a href="home_categories.html">Categories</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+  <img src="images/Logo.png" class="logoimage">
+  <div class="banner">
+    <img src="images/model.png" class="model">
+    <div class="slogan">
+      <h1>Women’s Best Jeweler is Her Shyness</h1>
+      <p>A hijab that will always make you comfortable at all times and easy to wear</p></div>
+      <br><br>
+      <a href="collection.HTML" class="btn">2022 Collection Catalog</a>
+    <div class="montage">
+    <center>
+      <video width="500" controls>
+        <source src="video/ads.mp4" type="video/mp4">
+      </video></center>
+    </div>
+  </div> 
+<!-- Home Page End -->
+<!-- Content Page Start -->
+  <div class="about">
+    <br><br>
+      <div class="title"><h1>Every Woman Has The Right To Look Beautiful</h1></div> 
+    <div class="tutorial">
+      <div style="float: right">
+        <p>This Hijab, This mark of Piety, is an act of faith,<br> a symbol for all the world to see.  <b>- Anonymous.....</b></p>
+        <p>"The sun doesn`t lose its beauty when<br> covered by the clouds.The same way your<br> beauty doesn`t fade when being 
+          covered by Hijab."<br><b>- Angelina Jolie </b></p>
+        <p>To all hijabis who are wearing niqab/hijab/abaya<br> may Allah shade you on the day that <br>there is no shade but only His shade<br>sake of God. <b>- Abida</b></p>
+        <p>Hijab isn't hiding your beauty with tight cloths, <br>Its how you handle your beauty for the <br>sake of God. <b>- Hijab Girls</b></p>
+
+        </div>
+        <video width="500" controls>
+          <source src="video/shawl.mp4" type="video/mp4">
+        </video>
+        <video width="500" controls>
+          <source src="video/bawal.mp4" type="video/mp4">
+        </video>
+    </div>
+  </div>
+  <br>
+<!-- Content Page End -->
+<!-- Footer Start -->
+<div class="footer-content">
+	<h3>Kinder Scarf Official</h3>
+	<p>Thank you for visiting our official website. We hope you are interested in buying our products. For 
+    more information you can contact us as below.</p>
+	<ul class="socials">
+		<li><a href="mailto:azreenazleen38@gmail.com"><i class="fa fa-envelope"></i></a></li>
+		<li><a href="https://www.facebook.com/profile.php?id=100077402413025"><i class="fa fa-facebook"></i></a></li>
+		<li><a href="https://twitter.com/KinderScarf"><i class="fa fa-twitter"></i></a></li>
+		<li><a href="https://www.instagram.com/kinderscarf/"><i class="fa fa-instagram"></i></a></li>
+		<li><a href="https://wa.link/kmehtp"><i class="fa fa-phone"></i></a></li>
+	</ul>
+</div>
+<div class="footer-bottom">
+	<p style="color:rgb(255, 255, 255);">copyright &copy;2022 kinderscarf.</p>
+</div>
+<!-- Footer End -->
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+</body>
+</html>

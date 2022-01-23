@@ -1,0 +1,167 @@
+/* CSS Document */
+
+*{margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(92, 77, 77, 0.336);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #000000;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.logo{
+    flex-basis: 20%;
+}
+
+.logo img{
+    width: 90px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.nav-links ul li a{
+    color: brown;
+    text-decoration: none;
+}
+
+.information{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    transform: translateY(-50%);
+}
+
+#circle{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 150px;
+    left: 100px;
+    border-radius: 50%;
+    background: rgb(233, 192, 154);
+    transform: rotate(0deg);
+    transition: 1s;
+}
+
+.feature img{
+    width: 170px;
+}
+
+.feature{
+    position: absolute;
+}
+
+.one{
+    top: 350px;
+    right: 50px;
+}
+
+.two{
+    top: 150px;
+    left: 350px;
+    transform: rotate(-90deg);
+}
+
+.three{
+    bottom: 410px;
+    left: 50px;
+    transform: rotate(-180deg);
+}
+
+.four{
+    bottom: 150px;
+    right: 350px;
+    transform: rotate(-270deg);
+}
+
+.controls{
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-40%);
+    text-align: center;
+}
+
+.controls h3{
+    margin: 15px 0;
+    color:brown;
+}
+
+#upBtn{
+    width: 80px;
+    cursor: pointer;
+}
+
+#downBtn{
+    width: 80px;
+    cursor: pointer;
+    transform: rotate(180deg);
+}
+.footer-bottom{
+    background: rgba(163, 133, 133, 0.568);
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 15px;
+}
+.container{
+    border-radius: 10px;
+    background-color: rgba(255, 170, 170, 0.514);
+}
+h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+span{
+    position: fixed;
+    margin-top: 20px;
+}
+.sidenav img{
+    width: 150px;
+    margin-left: 40px;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Categories Home</title>
+    <link rel="stylesheet" href="style 2.css">
+</head>
+<body>
+
+<!-- Home Page Start -->
+  <nav class="navbar">
+    <img src="images/Logo.png" class="logoimage">
+    <div class="content">
+      <div class="logo">
+        <a href="categories.html">Categories Page</a>
+      </div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="collection.HTML">Collection</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+<!-- Home Page End -->
+
+  <div class="main">
+      <div class="information">
+          <div id="circle">
+            <img src="images/hijab_girl.png" class="hijabgirl">
+              <div class="feature one">
+                  <img src="images/logo 1.png">
+              </div>
+              <div class="feature two">
+                  <img src="images/logo 2.png">
+              </div>
+              <div class="feature three">
+                  <img src="images/logo 3.png">
+              </div>
+              <div class="feature four">
+                  <img src="images/logo 4.png">
+              </div>
+          </div>
+      </div>
+    
+      <div class="controls">
+          <img src="images/arrow.png" id="upBtn">
+          <a href="categories.html"><h3>Our Collection Categories</h3></a>
+          <img src="images/arrow.png" id="downBtn">
+      </div>   
+    </div>
+    <div class="footer-bottom">
+        <p style="color:rgb(255, 255, 255);">copyright &copy;2022 kinderscarf.</p>
+    </div>
+  <script>
+      var circle = document.getElementById("circle");
+      var upBtn = document.getElementById("upBtn");
+      var downBtn = document.getElementById("downBtn");
+
+      var rotateValue = circle.style.transform;
+      var rotateSum;
+
+      upBtn.onclick = function()
+      {
+          rotateSum = rotateValue + "rotate(-90deg)";
+          circle.style.transform = rotateSum;
+          rotateValue = rotateSum;
+      }
+
+      downBtn.onclick = function()
+      {
+          rotateSum = rotateValue + "rotate(90deg)";
+          circle.style.transform = rotateSum;
+          rotateValue = rotateSum;
+      }
+
+  </script>
+      <script>
+        const body = document.querySelector("body");
+        const navbar = document.querySelector(".navbar");
+        const menuBtn = document.querySelector(".menu-btn");
+        const cancelBtn = document.querySelector(".cancel-btn");
+        menuBtn.onclick = ()=>{
+          navbar.classList.add("show");
+          menuBtn.classList.add("hide");
+          body.classList.add("disabled");
+        }
+        cancelBtn.onclick = ()=>{
+          body.classList.remove("disabled");
+          navbar.classList.remove("show");
+          menuBtn.classList.remove("hide");
+        }
+        window.onscroll = ()=>{
+          this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+        }
+      </script>
+</body>
+</html>
